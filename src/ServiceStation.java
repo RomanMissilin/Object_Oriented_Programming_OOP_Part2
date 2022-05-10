@@ -1,4 +1,4 @@
-public class ServiceStation implements Main.Checker {
+public class ServiceStation implements Checker {
 
     public void check(Car car, Bicycle bicycle, Truck truck) {
 
@@ -35,7 +35,6 @@ public class ServiceStation implements Main.Checker {
     }
 
     @Override
-    public void serve() {
-        System.out.println("Меняем покрышку");
+    public void service() {
     }
 }
