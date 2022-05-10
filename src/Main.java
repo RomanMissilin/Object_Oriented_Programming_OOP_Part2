@@ -37,6 +37,9 @@ public class Main {
         bicycle.wheelsCount = 2;
         bicycle2.wheelsCount = 2;
 
+        Checker car3 = new Car("car1", 4);
+        addToPool(car3);
+
         ServiceStation station = new ServiceStation();
         station.check(car, null, null);
         station.check(car2, null, null);
@@ -45,5 +48,13 @@ public class Main {
         station.check(null, null, truck);
         station.check(null, null, truck2);
         station.printSquare(String.valueOf(car));
+    }
+
+    public interface Checker {
+        public void serve();
+    }
+
+    public static void addToPool(Checker checker) {
+       checker.serve();
     }
 }

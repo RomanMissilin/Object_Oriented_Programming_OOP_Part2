@@ -1,6 +1,6 @@
-public class ServiceStation {
+public class ServiceStation implements Main.Checker {
 
-    public void check (Car car, Bicycle bicycle, Truck truck) {
+    public void check(Car car, Bicycle bicycle, Truck truck) {
 
         if (car != null) {
             System.out.println("Обслуживаем " + car.getModelName());
@@ -32,5 +32,10 @@ public class ServiceStation {
 
     public void printSquare(int num) {
         System.out.println(num * num);
+    }
+
+    @Override
+    public void serve() {
+        System.out.println("Меняем покрышку");
     }
 }

@@ -1,6 +1,6 @@
 import java.time.LocalDate;
 
-public class Car extends Transport {
+public class Car extends Transport implements Main.Checker {
 
 
     public Car(String modelName, int wheelsCount) {
@@ -22,5 +22,10 @@ public class Car extends Transport {
 
     public void checkEngine() {
         System.out.println("Проверяем двигатель");
+    }
+
+    @Override
+    public void serve() {
+        System.out.println("Меняем покрышку");
     }
 }
