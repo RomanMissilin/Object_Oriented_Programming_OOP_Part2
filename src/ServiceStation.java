@@ -37,5 +37,4 @@ public class ServiceStation implements Checker {
     @Override
     public void service() {
     }
-
 }

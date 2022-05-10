@@ -46,5 +46,4 @@ public class Main {
         station.check(null, null, truck2);
         station.printSquare(String.valueOf(car));
     }
-
 }
