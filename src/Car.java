@@ -12,7 +12,7 @@ public class Car extends Transport {
             System.out.println(wheelsCount + " некорректен, передайте корректный год!");
             return;
         }
-        this.wheelsCount = wheelsCount;
+        this.setWheelsCount(wheelsCount);
     }
     // А от этого есть смысл или я не правильно это реализовал?
 

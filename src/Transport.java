@@ -1,7 +1,7 @@
-public abstract class Transport {
+public abstract class Transport implements Checker {
 
-    public String modelName;
-    public int wheelsCount;
+    private String modelName;
+    private int wheelsCount;
 
     Transport(String modelName, int wheelsCount) {
         this.modelName = modelName;
@@ -23,6 +23,4 @@ public abstract class Transport {
     public void setWheelsCount(int wheelsCount) {
         this.wheelsCount = wheelsCount;
     }
-
-    public abstract void service();
 }
