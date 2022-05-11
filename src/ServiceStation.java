@@ -1,6 +1,6 @@
 public class ServiceStation implements Checker {
 
-    public void check(Car car, Bicycle bicycle, Truck truck) {
+    public void check (Car car, Bicycle bicycle, Truck truck) {
 
         if (car != null) {
             System.out.println("Обслуживаем " + car.getModelName());
@@ -34,7 +34,14 @@ public class ServiceStation implements Checker {
         System.out.println(num * num);
     }
 
+    public void check (Checker[] checkers) {
+        for (Checker checker : checkers) {
+            checker.service();
+        }
+    }
+
     @Override
     public void service() {
+        System.out.println("Обслуживает ");
     }
 }
