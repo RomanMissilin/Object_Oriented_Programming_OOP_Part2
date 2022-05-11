@@ -13,7 +13,7 @@ public class Main {
                 new Bicycle("bicycle2",2)
         };
 
-        Car car = new Car("car1", 4);
+        /*Car car = new Car("car1", 4);
         Car car2 = new Car("car2", 4);
 
         car.setModelName("car1");
@@ -35,7 +35,7 @@ public class Main {
         bicycle.setModelName("bicycle1");
         bicycle2.setModelName("bicycle2");
         bicycle.setWheelsCount(2);
-        bicycle2.setWheelsCount(2);
+        bicycle2.setWheelsCount(2);*/
 
         ServiceStation station = new ServiceStation();
         /*station.check(car, null, null);
