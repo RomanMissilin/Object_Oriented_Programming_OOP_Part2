@@ -14,7 +14,6 @@ public class Car extends Transport {
         }
         this.setWheelsCount(wheelsCount);
     }
-    // А от этого есть смысл или я не правильно это реализовал?
 
     public void updateTyre() {
         System.out.println("Меняем покрышку");
